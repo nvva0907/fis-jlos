@@ -1,0 +1,67 @@
+.jl-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+/* LEFT */
+.jl-left {
+  width: 15.4%;
+  height: 100vh;
+  background-color: #161a17;
+}
+.jl-left-logo {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jl-left-menu {
+  height: 42px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.jl-left-menu:hover {
+  background-color: #009944;
+}
+.jl-left-menu.selected {
+  background-color: #009944;
+}
+.jl-left-menu-item {
+  width: 224px;
+  height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: "Inter";
+}
+.jl-left-menu-item-text {
+  margin-left: 12px;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 22px;
+  width: 100%;
+  color: var(--typography-dark-theme-title-label, #fff);
+}
+
+
+/* RIGHT */
+.jl-right {
+  background-color: rgb(244, 243, 243);
+  width: 84.6%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.jl-navbar {
+  background: var(--background-light-theme-white, #FFF);
+  height: 56px;
+}
+.jl-content {
+  background-color: rgb(22, 165, 117);
+}

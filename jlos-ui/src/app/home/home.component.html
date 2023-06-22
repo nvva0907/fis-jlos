@@ -1,0 +1,39 @@
+<div class="container-fluid jl-container">
+  <div class="jl-left">
+    <div class="jl-left-logo">
+      <img class="jl-logo" src="../../assets/icon/jaccs.svg" />
+    </div>
+
+    <div
+      class="jl-left-menu"
+      *ngFor="let activity of activities; let i = index"
+      onclick="highlightMenu(this)"
+    >
+      <div
+        class="navbar-toggler jl-left-menu-item"
+        role="button"
+        data-bs-toggle="collapse"
+        [attr.href]="'#collapse-' + i"
+        [attr.aria-controls]="'#collapse-' + i"
+        aria-expanded="false"
+      >
+        <img src="../../assets/icon/{{ activity.icon }}.svg" />
+        <span class="jl-left-menu-item-text">{{ activity.page }}</span>
+      </div>
+      <img src="../../assets/icon/drop.svg" style="margin-left: 8px" />
+
+      <div class="collapse navbar-collapse" id="collapse-{{ i }}">
+        <div class="jl-menu-dropdown">
+          <img src="../../assets/icon/flag.svg" />
+          <span class="jl-left-menu-item-text">sdfsdfsdf</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jl-right">
+    <div class="jl-navbar"></div>
+    <div class="jl-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
